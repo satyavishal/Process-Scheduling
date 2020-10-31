@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 #include "job.cpp"
+#include "cpu.cpp"
 using namespace std;
 
 class External_Event

@@ -1,14 +1,14 @@
 class Job{
 private:
-  int job_no, priority, entryTime, timeRemaining;
+  int jobNo, priority, entryTime, timeRemaining;
   int runningTime = 0;
   int idleTime = 0;
   int cpuEntryCount = 0;
   int timeEstimate = 0;
-  int cpuEntrytime = 0;
+  int cpuEntryTime = 0;
 public:
   Job(int j,int p, int e, int t){
-    this->job_no =j;
+    this->jobNo =j;
     this->priority =p;
     this->entryTime = e;
     this->timeRemaining = t;
@@ -24,15 +24,15 @@ public:
   int getPriority(){return this->priority;}
   void setPriority(int p){this->priority = p;}
 
-  int getEntryTime(){retrun this->entryTime;} // system entry time
+  int getEntryTime(){return this->entryTime;} // system entry time
 
-  int getTimeRemaining(){retrun this->timeRemaining;}
+  int getTimeRemaining(){return this->timeRemaining;}
 
-  int getRunningTime(){retrun this->runningTime;}
+  int getRunningTime(){return  this->runningTime;}
 
-  int getIdleTime(){retrun this->idleTime;}
+  int getIdleTime(){return   this->idleTime;}
 
-  int getCpuEntryCount(){retrun this->cpuEntryCount;}
+  int getCpuEntryCount(){return  this->cpuEntryCount;}
 
   void incrementCpuEntryCount(){this->cpuEntryCount++;}
 
