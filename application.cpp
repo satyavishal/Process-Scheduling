@@ -1,66 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
 #include "services/process.cpp"
 using namespace std;
-
-// class Simulation{
-// private:
-//   int n_jobs=0;
-//   External_Events events;
-//   CPU cpu;
-//   ReadyQueue ready;
-//   WaitingQueue waiting;
-//
-//   void process_external_events(External_Events &events, int tim){
-//     auto temp = events.find_event(tim);
-//     if(temp!= NULL){
-//       cout<< "Processing a '"<<temp->command<<"' at time "<<tim<<":"<<endl;
-//       switch(temp->command){
-//         case 'J':
-//         {
-//           Job *j = new Job( ++n_jobs, temp->priority, tim, temp->time_estimate);
-//           ready.add_job(j);
-//           cout<<ready.is_empty()<<"  "<<n_jobs<<endl;
-//           break;
-//         }
-//         case 'W':
-//         {
-//           break;
-//         }
-//         case 'R':
-//         {
-//           break;
-//         }
-//         case 'C':
-//         {
-//           break;
-//         }
-//         case 'T':
-//         {
-//           break;
-//         }
-//         default: cout<<"command Error in Process_external_events"<<endl;
-//       }
-//     }
-//   }
-//
-// public:
-//   void start_simulation(string filename){
-//     // loading the events file
-//     if(!events.load_file(filename)){return;}
-//
-//     //cout<<(events.find_event2(1))->command<<endl;
-//
-//     int system_time = 1;
-//     do{
-//       this->process_external_events(events,system_time);
-//       system_time ++;
-//     }while(system_time <= 40);
-//     // print_stats();
-//   }
-//
-//
-// };
-
 
 int main(){
   Process sim;

@@ -1,6 +1,18 @@
 #include "../headers/job.h"
 using namespace std;
 
+Job :: Job(int j,int p, int e, int t){
+  this->jobNo =j;
+  this->priority =p;
+  this->entryTime = e;
+  this->timeRemaining = t;
+  this->runningTime  = 0;
+  this->idleTime = 0;
+  this-> cpuEntryCount =0;
+  this ->timeEstimate = 0;
+  this-> cpuEntryTime =0;
+}
+
 void Job :: setCpuEntryTime(int c){this->cpuEntryTime  = c;}
 //Time Estimate
 int Job :: getTimeEstimate(){return this->timeEstimate;}

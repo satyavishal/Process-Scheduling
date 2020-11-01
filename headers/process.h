@@ -11,13 +11,14 @@
 
 class Process{
 private:
+  int system_time;
   int n_jobs;
   Event_list events;
   CPU cpu;
   ReadyQueue ready;
   WaitingQueue waiting;
 
-  void process_external_events(Event_list &events, int tim);
+  void process_external_events();
 
 public:
 

@@ -56,15 +56,15 @@ bool Event_list :: events_completed(){
 }
 
 // can find any event in the vector
-External_Event* Event_list :: find_event2(int tim){
+External_Event* Event_list :: find_event2(int system_time){
   for(int i=0;i<events.size();i++){
-    if(events[i].first == tim){return events[i].second;}
+    if(events[i].first == system_time){return events[i].second;}
   }
   return NULL;
 }
 
 // returns the events in order after its time has reached
-External_Event* Event_list :: find_event(int tim){
-  if(it->first == tim){return (it++)->second;}
+External_Event* Event_list :: find_event(int system_time){
+  if(it->first == system_time){return (it++)->second;}
   else{return NULL;}
 }
