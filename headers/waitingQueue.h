@@ -2,7 +2,6 @@
 #define WAITQUEUE_H
 
 #include <unordered_map>
-#include "job.h"
 
 class WaitingQueue{
 private:

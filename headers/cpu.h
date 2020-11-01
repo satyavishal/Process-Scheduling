@@ -1,8 +1,6 @@
 #ifndef CPU_H
 #define CPU_H
 
-#include "job.h"
-
 class CPU{
 private:
   Job *current;

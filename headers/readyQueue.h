@@ -2,7 +2,6 @@
 #define READYQUEUE_H
 
 #include <list>
-#include "job.h"
 
 class ReadyQueue{
 private:

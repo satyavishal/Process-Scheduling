@@ -13,9 +13,9 @@ class Process{
 private:
   int n_jobs;
   Event_list events;
-  // CPU cpu;
-  // ReadyQueue ready;
-  // WaitingQueue waiting;
+  CPU cpu;
+  ReadyQueue ready;
+  WaitingQueue waiting;
 
   void process_external_events(Event_list &events, int tim);
 
