@@ -1,6 +1,11 @@
-#include<bits/stdc++.h>
-#include "job.cpp"
-#include "cpu.cpp"
+#include <iostream>
+#include <list>
+// #include <unordered_map>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <fstream>
+
 using namespace std;
 
 class External_Event
