@@ -1,7 +1,6 @@
 class CPU{
 private:
   Job *current;
-
 public:
   CPU(){
     this->current = NULL;
