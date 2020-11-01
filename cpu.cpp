@@ -1,3 +1,5 @@
+#include "cpu.h"
+
 class CPU{
 private:
   Job *current;
