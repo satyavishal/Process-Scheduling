@@ -1,3 +1,5 @@
+#include <list>
+
 class ReadyQueue{
 private:
   list<Job*> readyQueue[4];

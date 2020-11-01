@@ -1,17 +1,22 @@
 class Job{
 private:
   int jobNo, priority, entryTime, timeRemaining;
-  int runningTime = 0;
-  int idleTime = 0;
-  int cpuEntryCount = 0;
-  int timeEstimate = 0;
-  int cpuEntryTime = 0;
+  int runningTime;
+  int idleTime;
+  int cpuEntryCount;
+  int timeEstimate;
+  int cpuEntryTime;
 public:
   Job(int j,int p, int e, int t){
     this->jobNo =j;
     this->priority =p;
     this->entryTime = e;
     this->timeRemaining = t;
+    this->runningTime  = 0;
+    this->idleTime = 0;
+    this-> cpuEntryCount =0;
+    this ->timeEstimate = 0;
+    this-> cpuEntryTime =0;
   }
   void setCpuEntryTime(int c){this->cpuEntryTime  = c;}
   //Time Estimate
