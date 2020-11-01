@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
-#include "services/job.cpp"
-#include "services/event.cpp"
-#include "services/event_list.cpp"
+#include "services/process.cpp"
 using namespace std;
 
 // class Simulation{
@@ -65,12 +63,12 @@ using namespace std;
 
 
 int main(){
-  // Simulation sim;
-  // sim.start_simulation("input.txt");
+  Process sim;
+  sim.start_simulation("tests/input.txt");
 
   // External_Event *a1 = new External_Event(1,'J',3,1,8);
-  Event_list b;
-  if(!b.load_file("tests/input.txt")){return 0;}
+  // Event_list b;
+  // if(!b.load_file("tests/input.txt")){return 0;}
   // // b.insert_event(a1);
   // if(!b.find_event(1)){
   //   cout<<"null";
@@ -79,7 +77,7 @@ int main(){
   // }
   // cout<<b.events_completed();
 
-  cout<< (b.find_event2(10))->command;
+  // cout<< (b.find_event2(10))->command;
 
 
   return 0;
