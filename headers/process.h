@@ -28,6 +28,7 @@ private:
 
   void print_new_job_info(Job *job);
   void print_jobComplete_status();
+  void print_job_termination_status(Job *job);
 
 
 public:

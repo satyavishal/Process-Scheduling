@@ -16,9 +16,9 @@ void Process :: start_simulation(string filename){
   //cout<<(events.find_event2(1))->command<<endl;
 
   do{
-    this->process_external_events();
+    process_external_events();
     process_internal_events();
-    if(cpu.current_job()){cpu.Execute();};
+    if(cpu.current_job()){cpu.Execute();}
     system_time ++;
   }while(system_time <= 40);
 

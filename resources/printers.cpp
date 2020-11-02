@@ -14,3 +14,12 @@ void Process :: print_jobComplete_status(){
   cout<<"\t\t   Total Time Spent in the CPU "<<job->getRunningTime()<<endl;
   cout<<"\t\t   Total Time Spent in the System: "<<job->getIdleTime()+job->getRunningTime()<<endl<<endl;
 }
+
+void Process :: print_job_termination_status(Job *job){
+  cout<<"JOB: "<<job->getJobNo()<<" Terminated at time "<<system_time<<endl;
+  cout<<"\t\t[JOB "<<job->getJobNo()<<" STATUS]"<<endl;
+  cout<<"\t\t   Number of times entered CPU: "<<job->getCpuEntryCount()<<endl;
+  cout<<"\t\t   Total Idle time: "<<job->getIdleTime()<<endl;
+  cout<<"\t\t   Total Time Spent in the CPU "<<job->getRunningTime()<<endl;
+  cout<<"\t\t   Total Time Spent in the System: "<<job->getIdleTime()+job->getRunningTime()<<endl<<endl;
+}

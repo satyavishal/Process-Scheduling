@@ -8,10 +8,22 @@ void ReadyQueue :: add_job(Job *job){
 
 Job* ReadyQueue :: extractJob(){
   Job *job;
-  for(int priority = 0;  priority<4; priority++){
+  for(int priority = 0;  priority < 4; priority++){
     if(!readyQueue[priority].empty()){
       job = readyQueue[priority].front();
       readyQueue[priority].pop_front();
+      break;
+    }
+  }
+  return job;
+}
+
+Job* ReadyQueue :: find_Job(){
+  Job *job;
+  for(int priority = 0;  priority<4; priority++){
+    if(!readyQueue[priority].empty()){
+      job = readyQueue[priority].front();
+      // readyQueue[priority].pop_front();
       break;
     }
   }

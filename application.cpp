@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-  Process sim;
-  sim.start_simulation("tests/input.txt");
+  Process process_manager;
+  process_manager.start_simulation("tests/input.txt");
 
   // External_Event *a1 = new External_Event(1,'J',3,1,8);
   // Event_list b;

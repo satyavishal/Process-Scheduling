@@ -10,13 +10,15 @@ int Process :: create_job(External_Event *current_event ){
 
 }
 
+
 int Process :: request_IO(){
   if(cpu.current_job()!=NULL){
-    waiting.insert(cpu.current_job());
+    Job *job = cpu.current_job();
+    waiting.insert(job);
     cpu.clear_cpu();
-    cout<<"inserted into the waitQueue"<<endl;
+    cout<<"Moved the Job: "<<job->getJobNo()<<" from the CPU into the Waitqueue"<<endl<<endl;
   }else{
-    cout<<"entered w ka else\n";
+    cout<<"Error CPU does not have current running JOB"<<endl<<endl;
   }
   return 1;
 }
@@ -39,17 +41,19 @@ int Process :: terminate_job(int job_num){
   if(job == NULL){
     job = waiting.get_job(job_num);
     if(job == NULL){
+
       job = cpu.current_job();
-      if(job==NULL){
-        cout<<"Job does not exist for termination"<<endl;
-        return 0;
-      }else{
-        cout<<"*JOB: "<<job_num<<" is running cannot terminate"<<endl<<endl;
-      }
+      if(job==NULL){ cout<<"Job does not exist for termination"<<endl; return 0;}
+      else{cout<<"*JOB: "<<job_num<<" is running cannot terminate"<<endl<<endl; return 0;}
+
+    }else{
+      waiting.remove_job(job_num);
+      cout<<"JOB: "<< job->getJobNo() <<" removed from the waiting queue"<<endl<<endl;
     }
-    waiting.remove_job(job_num);
+  }else{
+    cout<<"JOB: "<< job->getJobNo() <<" removed from the ready queue"<<endl<<endl;
   }
-  // job->print_stats();
+  print_job_termination_status(job);
   delete(job);
   return 0;
 }

@@ -11,6 +11,8 @@ public:
 
   Job *extractJob();
 
+  Job *find_Job();
+
   int is_empty();
 
   Job *remove_job(int job_num);
