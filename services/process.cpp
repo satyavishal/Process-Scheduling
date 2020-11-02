@@ -13,19 +13,19 @@ void Process :: start_simulation(string filename){
   if(!events.load_file(filename)){return;}
 
   cout<<"[SIMULATION STARTED]\n\n";
-  //cout<<(events.find_event2(1))->command<<endl;
 
   do{
-    process_external_events();
+    process_external_events();  //processes the external events from the events list and take action depending on the command given
 
 
-    process_internal_events();
+    process_internal_events();  // 1. loads a job into the cpu if CPU is empty, 2. Swaps a Higher priority job from ready Queue with the current running job in the CPU
 
 
     if(cpu.current_job()){
 
-      int job_completion_flag = cpu.Execute();
+      int job_completion_flag = cpu.Execute();    // increments the RunningTime of the Job, Decrements the Timeremaining and returns the Status of job completion
 
+      // if the job is completed its stats are printed and it is cleared from the CPU, and the job is deleted
       if(job_completion_flag == 1){
         Job *job = cpu.current_job();
         cpu.clear_cpu();
@@ -34,14 +34,12 @@ void Process :: start_simulation(string filename){
         delete(job);
       }
     }
-    increment_Idletime();
+    increment_Idletime();   // increments the idle time of all the jobs in the system
     system_time ++;
   }while(!events.events_completed() || (!ready.is_empty() || cpu.current_job()) );
 
   cout<<"[SIMULATION ENDED]"<<endl<<endl;
-  // while(!ready.is_empty()){
-  //   auto temp = ready.extractJob();
-  //   cout<< temp->getJobNo() << " " << temp->getPriority() << endl;
-  // }
-  // print_stats();
+
+  waiting.clear_waitqueue(); // clears the waiting queue of all the jobs
+
 }

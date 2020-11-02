@@ -9,7 +9,7 @@ private:
 public:
   void insert(Job *job);
   Job* get_job(int job_num);
-  void clear_wq();
+  void clear_waitqueue();
   int get_size();
   void remove_job(int job_num);
   void incrementIdleTime();

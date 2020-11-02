@@ -8,7 +8,7 @@ Job* WaitingQueue :: get_job(int job_num){
   return NULL;
 }
 
-void WaitingQueue :: clear_wq(){this->waitqueue.erase(this->waitqueue.begin(),this->waitqueue.end());}
+void WaitingQueue :: clear_waitqueue(){this->waitqueue.erase(this->waitqueue.begin(),this->waitqueue.end());}
 
 int WaitingQueue :: get_size(){return this->waitqueue.bucket_count();}
 
