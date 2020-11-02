@@ -4,9 +4,9 @@ class ReadyQueue{
 private:
   list<Job*> readyQueue[4];
 public:
-  void add_job(Job *j){
-    int c = j->getPriority() - 1;
-    readyQueue[c].push_back(j);
+  void add_job(Job *job){
+    int priority = job->getPriority() - 1;
+    readyQueue[priority].push_back(job);
   }
 
   Job *extractJob(){

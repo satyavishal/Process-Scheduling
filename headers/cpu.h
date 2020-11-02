@@ -3,12 +3,14 @@
 
 class CPU{
 private:
-  Job *current;
+  Job *running_job;
 public:
   CPU();
   void set_job(Job *j);
+  void clear_cpu();
   Job *current_job();
   void Execute();
+  void CPU.complete_currentJob();
 };
 
 #endif
