@@ -9,7 +9,7 @@ public:
   void set_job(Job *job);
   void clear_cpu();
   Job *current_job();
-  void Execute();
+  int Execute();
   void complete_currentJob();
 };
 

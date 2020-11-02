@@ -1,0 +1,474 @@
+[SIMULATION STARTED]
+
+Processing a 'J' at time 1:
+		[NEW JOB INFORMATION]
+		   Job Number: 1
+		   Priority Number: 3
+		   Estimated Time: 8
+
+Job 1 Entered CPU at time 1
+
+Processing a 'R' at time 4:
+*JOB: 1 not found in the WaitQueue!
+
+Processing a 'C' at time 5:
+JOB: 1 completed at time 5
+		[JOB 1 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 4
+		   Total Time Spent in the System: 4
+
+Processing a 'J' at time 6:
+		[NEW JOB INFORMATION]
+		   Job Number: 2
+		   Priority Number: 3
+		   Estimated Time: 5
+
+Job 2 Entered CPU at time 6
+
+Processing a 'T' at time 7:
+*JOB: 2 is running cannot terminate
+
+Processing a 'J' at time 9:
+		[NEW JOB INFORMATION]
+		   Job Number: 3
+		   Priority Number: 2
+		   Estimated Time: 6
+
+Job 3 Entered CPU at time 9
+
+Processing a 'W' at time 10:
+Moved the Job: 3 from the CPU into the Waitqueue
+
+Job 2 Entered CPU at time 10
+
+JOB: 2 timed out at* 11
+JOB: 2 Terminated at time 11
+		[JOB 2 STATUS]
+		   Number of times entered CPU: 2
+		   Total Idle time: 1
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 6
+
+Processing a 'J' at time 12:
+		[NEW JOB INFORMATION]
+		   Job Number: 4
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 4 Entered CPU at time 12
+
+Processing a 'J' at time 14:
+		[NEW JOB INFORMATION]
+		   Job Number: 5
+		   Priority Number: 4
+		   Estimated Time: 9
+
+Processing a 'T' at time 16:
+*JOB: 4 is running cannot terminate
+
+JOB: 4 timed out at* 16
+JOB: 4 Terminated at time 16
+		[JOB 4 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 5
+
+Job 5 Entered CPU at time 17
+
+Processing a 'J' at time 18:
+		[NEW JOB INFORMATION]
+		   Job Number: 6
+		   Priority Number: 3
+		   Estimated Time: 7
+
+Job 6 Entered CPU at time 18
+
+Processing a 'R' at time 21:
+*JOB: 4 not found in the WaitQueue!
+
+Processing a 'T' at time 23:
+JOB: 5 removed from the ready queue
+
+JOB: 5 Terminated at time 23
+		[JOB 5 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 8
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 9
+
+JOB: 6 timed out at* 24
+JOB: 6 Terminated at time 24
+		[JOB 6 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 7
+		   Total Time Spent in the System: 7
+
+Processing a 'J' at time 25:
+		[NEW JOB INFORMATION]
+		   Job Number: 7
+		   Priority Number: 1
+		   Estimated Time: 7
+
+Job 7 Entered CPU at time 25
+
+Processing a 'C' at time 26:
+JOB: 7 completed at time 26
+		[JOB 7 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 1
+
+Processing a 'W' at time 28:
+Error CPU does not have current running JOB
+
+Processing a 'R' at time 30:
+*JOB: 6 not found in the WaitQueue!
+
+Processing a 'R' at time 33:
+*JOB: 7 not found in the WaitQueue!
+
+Processing a 'C' at time 34:
+Error CPU does not have current running JOB
+
+Processing a 'C' at time 36:
+Error CPU does not have current running JOB
+
+Processing a 'J' at time 37:
+		[NEW JOB INFORMATION]
+		   Job Number: 8
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 8 Entered CPU at time 37
+
+Processing a 'C' at time 40:
+JOB: 8 completed at time 40
+		[JOB 8 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 3
+		   Total Time Spent in the System: 3
+
+[SIMULATION ENDED]
+
+[SIMULATION STARTED]
+
+Processing a 'J' at time 1:
+		[NEW JOB INFORMATION]
+		   Job Number: 1
+		   Priority Number: 3
+		   Estimated Time: 8
+
+Job 1 Entered CPU at time 1
+
+Processing a 'R' at time 4:
+*JOB: 1 not found in the WaitQueue!
+
+Processing a 'C' at time 5:
+JOB: 1 completed at time 5
+		[JOB 1 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 4
+		   Total Time Spent in the System: 4
+
+Processing a 'J' at time 6:
+		[NEW JOB INFORMATION]
+		   Job Number: 2
+		   Priority Number: 3
+		   Estimated Time: 5
+
+Job 2 Entered CPU at time 6
+
+Processing a 'T' at time 7:
+*JOB: 2 is running cannot terminate
+
+Processing a 'J' at time 9:
+		[NEW JOB INFORMATION]
+		   Job Number: 3
+		   Priority Number: 2
+		   Estimated Time: 6
+
+Job 3 Entered CPU at time 9
+
+Processing a 'W' at time 10:
+Moved the Job: 3 from the CPU into the Waitqueue
+
+Job 2 Entered CPU at time 10
+
+JOB: 2 timed out at* 11
+JOB: 2 Terminated at time 11
+		[JOB 2 STATUS]
+		   Number of times entered CPU: 2
+		   Total Idle time: 1
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 6
+
+Processing a 'J' at time 12:
+		[NEW JOB INFORMATION]
+		   Job Number: 4
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 4 Entered CPU at time 12
+
+Processing a 'J' at time 14:
+		[NEW JOB INFORMATION]
+		   Job Number: 5
+		   Priority Number: 4
+		   Estimated Time: 9
+
+Processing a 'T' at time 16:
+*JOB: 4 is running cannot terminate
+
+JOB: 4 timed out at* 16
+JOB: 4 Terminated at time 16
+		[JOB 4 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 5
+
+Job 5 Entered CPU at time 17
+
+Processing a 'J' at time 18:
+		[NEW JOB INFORMATION]
+		   Job Number: 6
+		   Priority Number: 3
+		   Estimated Time: 7
+
+Job 6 Entered CPU at time 18
+
+Processing a 'R' at time 21:
+*JOB: 4 not found in the WaitQueue!
+
+Processing a 'T' at time 23:
+JOB: 5 removed from the ready queue
+
+JOB: 5 Terminated at time 23
+		[JOB 5 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 8
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 9
+
+JOB: 6 timed out at* 24
+JOB: 6 Terminated at time 24
+		[JOB 6 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 7
+		   Total Time Spent in the System: 7
+
+Processing a 'J' at time 25:
+		[NEW JOB INFORMATION]
+		   Job Number: 7
+		   Priority Number: 1
+		   Estimated Time: 7
+
+Job 7 Entered CPU at time 25
+
+Processing a 'C' at time 26:
+JOB: 7 completed at time 26
+		[JOB 7 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 1
+
+Processing a 'W' at time 28:
+Error CPU does not have current running JOB
+
+Processing a 'R' at time 30:
+*JOB: 6 not found in the WaitQueue!
+
+Processing a 'R' at time 33:
+*JOB: 7 not found in the WaitQueue!
+
+Processing a 'C' at time 34:
+Error CPU does not have current running JOB
+
+Processing a 'C' at time 36:
+Error CPU does not have current running JOB
+
+Processing a 'J' at time 37:
+		[NEW JOB INFORMATION]
+		   Job Number: 8
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 8 Entered CPU at time 37
+
+Processing a 'C' at time 40:
+JOB: 8 completed at time 40
+		[JOB 8 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 3
+		   Total Time Spent in the System: 3
+
+[SIMULATION ENDED]
+
+[SIMULATION STARTED]
+
+Processing a 'J' at time 1:
+		[NEW JOB INFORMATION]
+		   Job Number: 1
+		   Priority Number: 3
+		   Estimated Time: 8
+
+Job 1 Entered CPU at time 1
+
+Processing a 'R' at time 4:
+*JOB: 1 not found in the WaitQueue!
+
+Processing a 'C' at time 5:
+JOB: 1 completed at time 5
+		[JOB 1 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 4
+		   Total Time Spent in the System: 4
+
+Processing a 'J' at time 6:
+		[NEW JOB INFORMATION]
+		   Job Number: 2
+		   Priority Number: 3
+		   Estimated Time: 5
+
+Job 2 Entered CPU at time 6
+
+Processing a 'T' at time 7:
+*JOB: 2 is running cannot terminate
+
+Processing a 'J' at time 9:
+		[NEW JOB INFORMATION]
+		   Job Number: 3
+		   Priority Number: 2
+		   Estimated Time: 6
+
+Job 3 Entered CPU at time 9
+
+Processing a 'W' at time 10:
+Moved the Job: 3 from the CPU into the Waitqueue
+
+Job 2 Entered CPU at time 10
+
+JOB: 2 timed out at* 11
+JOB: 2 Terminated at time 11
+		[JOB 2 STATUS]
+		   Number of times entered CPU: 2
+		   Total Idle time: 1
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 6
+
+Processing a 'J' at time 12:
+		[NEW JOB INFORMATION]
+		   Job Number: 4
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 4 Entered CPU at time 12
+
+Processing a 'J' at time 14:
+		[NEW JOB INFORMATION]
+		   Job Number: 5
+		   Priority Number: 4
+		   Estimated Time: 9
+
+Processing a 'T' at time 16:
+*JOB: 4 is running cannot terminate
+
+JOB: 4 timed out at* 16
+JOB: 4 Terminated at time 16
+		[JOB 4 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 5
+		   Total Time Spent in the System: 5
+
+Job 5 Entered CPU at time 17
+
+Processing a 'J' at time 18:
+		[NEW JOB INFORMATION]
+		   Job Number: 6
+		   Priority Number: 3
+		   Estimated Time: 7
+
+Job 6 Entered CPU at time 18
+
+Processing a 'R' at time 21:
+*JOB: 4 not found in the WaitQueue!
+
+Processing a 'T' at time 23:
+JOB: 5 removed from the ready queue
+
+JOB: 5 Terminated at time 23
+		[JOB 5 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 8
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 9
+
+JOB: 6 timed out at* 24
+JOB: 6 Terminated at time 24
+		[JOB 6 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 7
+		   Total Time Spent in the System: 7
+
+Processing a 'J' at time 25:
+		[NEW JOB INFORMATION]
+		   Job Number: 7
+		   Priority Number: 1
+		   Estimated Time: 7
+
+Job 7 Entered CPU at time 25
+
+Processing a 'C' at time 26:
+JOB: 7 completed at time 26
+		[JOB 7 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 1
+		   Total Time Spent in the System: 1
+
+Processing a 'W' at time 28:
+Error CPU does not have current running JOB
+
+Processing a 'R' at time 30:
+*JOB: 6 not found in the WaitQueue!
+
+Processing a 'R' at time 33:
+*JOB: 7 not found in the WaitQueue!
+
+Processing a 'C' at time 34:
+Error CPU does not have current running JOB
+
+Processing a 'C' at time 36:
+Error CPU does not have current running JOB
+
+Processing a 'J' at time 37:
+		[NEW JOB INFORMATION]
+		   Job Number: 8
+		   Priority Number: 1
+		   Estimated Time: 5
+
+Job 8 Entered CPU at time 37
+
+Processing a 'C' at time 40:
+JOB: 8 completed at time 40
+		[JOB 8 STATUS]
+		   Number of times entered CPU: 1
+		   Total Idle time: 0
+		   Total Time Spent in the CPU 3
+		   Total Time Spent in the System: 3
+
+[SIMULATION ENDED]
+

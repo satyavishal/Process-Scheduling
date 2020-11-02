@@ -14,6 +14,8 @@ private:
 public:
   Job(int j,int p, int e, int t); //constructor
 
+  int check_job_completed();
+
   void setCpuEntryTime(int c);
   //Time Estimate
   int getTimeEstimate();

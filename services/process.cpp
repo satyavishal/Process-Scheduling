@@ -17,10 +17,26 @@ void Process :: start_simulation(string filename){
 
   do{
     process_external_events();
+
+
     process_internal_events();
-    if(cpu.current_job()){cpu.Execute();}
+
+
+    if(cpu.current_job()){
+
+      int job_completion_flag = cpu.Execute();
+
+      if(job_completion_flag == 1){
+        Job *job = cpu.current_job();
+        cpu.clear_cpu();
+        cout<<"JOB: "<<job->getJobNo()<<" timed out at* "<<system_time<<endl;
+        print_job_termination_status(job);
+        delete(job);
+      }
+    }
+    increment_Idletime();
     system_time ++;
-  }while(system_time <= 40);
+  }while(!events.events_completed() || (!ready.is_empty() || cpu.current_job()) );
 
   cout<<"[SIMULATION ENDED]"<<endl<<endl;
   // while(!ready.is_empty()){

@@ -13,6 +13,13 @@ Job :: Job(int j,int p, int e, int t){
   this-> cpuEntryTime =0;
 }
 
+int Job :: check_job_completed(){
+  if(this->timeRemaining == 0){
+    return 1;
+  }
+  return 0;
+}
+
 void Job :: setCpuEntryTime(int c){this->cpuEntryTime  = c;}
 //Time Estimate
 int Job :: getTimeEstimate(){return this->timeEstimate;}

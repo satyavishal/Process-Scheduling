@@ -23,8 +23,12 @@ void Process :: process_external_events(){
       }
       case 'C':
       {
-        print_jobComplete_status();
-        cpu.complete_currentJob();
+        if(cpu.current_job()!=NULL){
+          print_jobComplete_status();
+          cpu.complete_currentJob();
+        }else{
+          cout<<"Error CPU does not have current running JOB"<<endl<<endl;
+        }
         break;
       }
       case 'T':
@@ -73,7 +77,4 @@ void Process :: process_internal_events(){
       }
     }
   }
-
-  increment_Idletime();
-
 }

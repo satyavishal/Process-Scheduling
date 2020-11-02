@@ -8,9 +8,12 @@ void CPU :: set_job(Job *job){running_job =job;}
 
 Job * CPU ::current_job(){return running_job;}
 
-void CPU :: Execute(){
-  // cout<<"\t\t\tCurrent Job In cpu : "<<running_job->getJobNo()<<endl;
-running_job->execute();}
+int CPU :: Execute(){
+
+running_job->execute();
+return running_job->check_job_completed();
+
+}
 
 void CPU :: clear_cpu(){running_job = NULL;}
 
