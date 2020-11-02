@@ -43,3 +43,13 @@ int ReadyQueue :: is_empty(){
   }
   return 1;
 }
+
+void ReadyQueue :: incrementIdleTime(){
+  Job *job = NULL;
+  for(int priority =0; priority<4; priority++){
+    for(auto iterator = readyQueue[priority].begin(); iterator!= readyQueue[priority].end(); iterator ++){
+      job = *(iterator);
+      job->incrementIdleTime();
+    }
+  }
+}

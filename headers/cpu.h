@@ -6,7 +6,7 @@ private:
   Job *running_job;
 public:
   CPU();
-  void set_job(Job *j);
+  void set_job(Job *job);
   void clear_cpu();
   Job *current_job();
   void Execute();

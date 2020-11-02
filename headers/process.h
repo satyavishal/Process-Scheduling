@@ -23,6 +23,11 @@ private:
   int request_IO();
   int complete_IO(int job_num);
   int terminate_job(int job_num);
+  void process_internal_events();
+  void increment_Idletime();
+
+  void print_new_job_info(Job *job);
+  void print_jobComplete_status();
 
 
 public:

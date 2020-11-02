@@ -9,7 +9,7 @@ Job :: Job(int j,int p, int e, int t){
   this->runningTime  = 0;
   this->idleTime = 0;
   this-> cpuEntryCount =0;
-  this ->timeEstimate = 0;
+  this ->timeEstimate = t;
   this-> cpuEntryTime =0;
 }
 

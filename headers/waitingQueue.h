@@ -12,6 +12,8 @@ public:
   void clear_wq();
   int get_size();
   void remove_job(int job_num);
+  void incrementIdleTime();
+
 };
 
 

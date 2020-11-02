@@ -1,6 +1,7 @@
 #include "../headers/process.h"
 #include "../resources/process_resources.cpp"
 #include "../resources/process_events.cpp"
+#include "../resources/printers.cpp"
 
 using namespace std;
 
@@ -16,12 +17,15 @@ void Process :: start_simulation(string filename){
 
   do{
     this->process_external_events();
+    process_internal_events();
+    if(cpu.current_job()){cpu.Execute();};
     system_time ++;
   }while(system_time <= 40);
 
-  while(!ready.is_empty()){
-    auto temp = ready.extractJob();
-    cout<< temp->getJobNo() << " " << temp->getPriority() << endl;
-  }
+  cout<<"[SIMULATION ENDED]"<<endl<<endl;
+  // while(!ready.is_empty()){
+  //   auto temp = ready.extractJob();
+  //   cout<< temp->getJobNo() << " " << temp->getPriority() << endl;
+  // }
   // print_stats();
 }
