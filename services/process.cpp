@@ -23,14 +23,23 @@ int Process :: request_IO(int job_no){
   return 1;
 }
 
+int Process :: complete_IO(int job_num){
   auto job = waiting.get_job(job_num);
-  int Process :: complete_IO(int job_num){
   waiting.remove_job(job_num);
   ready.add_job(job);
 }
 
 int Process :: terminate_job(int job_num){
-  
+  Job *job;
+  job = ready.remove_job(job_num);
+  if(job == NULL){
+    job = waiting.get_job(job_num);
+    if(job == NULL){cout<<"Job does not exist for termination"<<endl; return 0;}
+    waiting.remove_job(job_num);
+  }
+  // job->print_stats();
+  delete(job);
+  return 0;
 }
 
 void Process :: process_external_events(){
@@ -39,34 +48,34 @@ void Process :: process_external_events(){
 
   if(current_event!= NULL){
     cout<< "Processing a '"<<current_event->command<<"' at time "<<system_time<<":"<<endl;
-    switch(current_event->command){
-      case 'J':
-      {
-        create_job(current_event);
-        break;
-      }
-      case 'W':
-      {
-        request_IO();
-        break;
-      }
-      case 'R':
-      {
-        complete_IO(current_event->job_num);
-        break;
-      }
-      case 'C':
-      {
-        CPU.complete_currentJob();
-        break;
-      }
-      case 'T':
-      {
-        terminate_job(current_event->job_num);
-        break;
-      }
-      default: cout<<"command Error in Process_external_events"<<endl;
-    }
+    // switch(current_event->command){
+    //   case 'J':
+    //   {
+    //     create_job(current_event);
+    //     break;
+    //   }
+    //   case 'W':
+    //   {
+    //     request_IO();
+    //     break;
+    //   }
+    //   case 'R':
+    //   {
+    //     complete_IO(current_event->job_num);
+    //     break;
+    //   }
+    //   case 'C':
+    //   {
+    //     CPU.complete_currentJob();
+    //     break;
+    //   }
+    //   case 'T':
+    //   {
+    //     terminate_job(current_event->job_num);
+    //     break;
+    //   }
+    //   default: cout<<"command Error in Process_external_events"<<endl;
+    // }
   }
 }
 

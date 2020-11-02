@@ -13,6 +13,8 @@ public:
 
   int is_empty();
 
+  Job *remove_job(int job_num);
+  
 };
 
 #endif

@@ -9,4 +9,4 @@ void WaitingQueue :: clear_wq(){this->waitqueue.erase(this->waitqueue.begin(),th
 
 int WaitingQueue :: get_size(){return this->waitqueue.bucket_count();}
 
-void WaitingQueue :: remove_job(int job_num){this->waitqueue.erase(job_num)}
+void WaitingQueue :: remove_job(int job_num){this->waitqueue.erase(job_num);}

@@ -10,7 +10,7 @@ public:
   void clear_cpu();
   Job *current_job();
   void Execute();
-  void CPU.complete_currentJob();
+  void complete_currentJob();
 };
 
 #endif
