@@ -34,8 +34,10 @@ void Process :: start_simulation(string filename){
         delete(job);
       }
     }
+
     increment_Idletime();   // increments the idle time of all the jobs in the system
     system_time ++;
+
   }while(!events.events_completed() || (!ready.is_empty() || cpu.current_job()) );
 
   cout<<"[SIMULATION ENDED]"<<endl<<endl;

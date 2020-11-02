@@ -10,7 +10,7 @@ public:
   int job_num;
   int time_estimate;
 
-  External_Event(int en_time,char command,int priority,int job,int e_time);
+  External_Event(int entry_time,char command,int priority,int job,int estimated_time);
 
 };
 

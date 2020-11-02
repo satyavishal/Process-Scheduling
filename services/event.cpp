@@ -1,7 +1,7 @@
 #include "../headers/event.h"
 using namespace std;
 
-External_Event :: External_Event(int en_time,char command,int priority,int job,int e_time){
+External_Event :: External_Event(int entry_time,char command,int priority,int job,int estimated_time){
   this->entry_time = en_time;
   this->priority = priority;
   this->command = command;
